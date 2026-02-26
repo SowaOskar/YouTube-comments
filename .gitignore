@@ -1,0 +1,23 @@
+# Секреты — никогда не коммитить!
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Результаты анализа (опционально)
+output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
