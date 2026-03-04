@@ -260,3 +260,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+    ------------------
+
+  video_id = get_video_id(args.video)
+    comments = fetch_comments(video_id, max_comments=args.max_comments)
+    analysis = analyze_with_claude(comments, model=args.model)
+    print_report(analysis, video_id)
+
+    if args.save:
+        save_results(comments, analysis, video_id)
+
+
+if __name__ == "__main__":
+    main()
